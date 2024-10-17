@@ -117,3 +117,5 @@ public class GUI_FIguras extends JFrame {
 		contentPane.add(btnArea1_2);
 	}
 }
+
+//Tamadre cambiooo
