@@ -63,7 +63,24 @@ public class GUI_FIguras extends JFrame {
 		btnArea1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// Acción para calcular el área del triángulo
+
 				JOptionPane.showMessageDialog(null,"Este cambio lo hizo Xavi");
+
+				// Acción para calcular el área del triángulo
+			try {
+				// Captura de datos del usuario
+				float base = Float.parseFloat(JOptionPane.showInputDialog(null, "Dame la base del triángulo:"));
+				float altura = Float.parseFloat(JOptionPane.showInputDialog(null, "Dame la altura del triángulo:"));
+					
+				// Cálculo del área usando el objeto Figura
+				float area = (base * altura) / 2;
+					
+				// Muestra el área calculada
+					JOptionPane.showMessageDialog(null, "El área del triangulo es: " + area);
+				} catch (NumberFormatException ex) {
+					JOptionPane.showMessageDialog(null, "Por favor ingresa valores numéricos válidos.");
+				}
+
 			}
 		});
 		btnArea1.setBounds(24, 139, 85, 21);
