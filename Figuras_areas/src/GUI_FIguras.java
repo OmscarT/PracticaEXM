@@ -63,6 +63,7 @@ public class GUI_FIguras extends JFrame {
 		btnArea1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// Acción para calcular el área del triángulo
+				JOptionPane.showMessageDialog(null,"Este cambio lo hizo Xavi");
 			}
 		});
 		btnArea1.setBounds(24, 139, 85, 21);
